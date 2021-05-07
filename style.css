@@ -180,4 +180,46 @@ footer .container:nth-child(2) {
 footer .container a {
     color: var(--white);
 }
-
+/*****************
+responsive
+*****************/
+@media(max-width:768px) {
+    .container {
+        width: 90%;
+    }
+    header nav ul li {
+        padding: 0px 5px;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    header p {
+        font-size: 1rem;
+        padding: 10px 0px;
+    }
+    .photos h4 {
+        font-size: 1.2rem;
+    }
+    .photos h3 {
+        font-size: 1.7rem;
+    }
+    .photos article {
+        width: 100%;
+    }
+    .photos article p {
+        font-size: 1rem;
+    }
+    .services h2 {
+        font-size: 2rem;
+    }
+    .services .row div {
+        width: 100%;
+    }
+    footer .col {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    footer .col:nth-child(2) {
+        text-indent: 0px;
+    }
+}
