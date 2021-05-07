@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700|Montserrat:300,400&display=swap');
+
+:root {
+    --green: #32b777;
+    --white: #fff;
+    --gray: #555;
+    --lightgray: #ececec;
+    --darkgray: #222;
+    --fontSize: 16px;
+    --transition: .3s ease;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    color: var(--gray);
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--fontSize);
+}
+h1, h2, h3, h4 {
+    font-family: 'Comfortaa', cursive;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+ul {
+    list-style: none;
+}
+
+/*****************
+header
+*****************/
+header {
+    background-image: linear-gradient(rgba(34,34,34,.7),rgba(34,34,34,.7)),url(img/horiznos-header.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: var(--white);
+    height: 100vh; 
+   
+}
+header nav {
+    padding-bottom: 150px;
+}
+header h2 {
+    font-size: 2.2rem;
+    padding-top: 30px;
+}
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 25px;
+}
+header p {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    padding: 20px 150px;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+header a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.4rem;
+}
+header a:hover {
+    color: var(--green);
+}
+header button {
+    padding: 10px 50px;
+    background: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    transition: var(--transition);
+}
+header button:hover {
+    background: var(--white);
+    color: var(--green);
+}
+/*****************
+photos
+*****************/
+.photos {
+    background: var(--lightgray);
+    text-align: center;
+    padding: 50px 0;
+}
+.photos h3 {
+    font-size: 2.7rem;
+    color: var(--gray);
+}
+.photos h4 {
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+}
+.photos article {
+    float: left;
+    width: 33%;
+    padding: 10px;
+}
+.photos article p {
+    padding: 20px 0;
+    font-size: 1.2rem;
+}
+.photos img {
+    width: 100%;
+}
+/*****************
+services
+*****************/
+.services {
+    padding: 50px 0;
+}
+.services h2 {
+    font-size: 2.7rem;
+    text-align: center;
+}
+.services h2 + p {
+    text-align: center;
+    font-size: 1.4rem;
+    padding-bottom: 30px;
+}
+.services i {
+    float: left;
+    background: var(--green);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 20px 20px 0;
+    font-size: 2.2rem;
+    color: var(--white);
+}
+.services h4 {
+    font-size: 1.4rem;
+}
+.services p {
+    padding: 0 40px 0 0;
+}
+.services .row div {
+    float: left;
+    width: 50%;
+    padding-bottom: 40px;
+}
+/*****************
+footer
+*****************/
+footer {
+    padding: 100px 0;
+    background: var(--gray);
+    line-height: 2;
+    color: var(--white);
+}
+footer .col {
+    width: 33%;
+    float: left;
+}
+footer .col:nth-child(2) {
+    text-indent: 100px;
+}
+footer ul li {
+    list-style: none;
+}
+footer ul li a {
+    color: var(--white);
+}
+footer .container:nth-child(2) {
+    text-align: center;
+}
+footer .container a {
+    color: var(--white);
+}
+
